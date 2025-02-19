@@ -9,7 +9,9 @@ export function Login() {
             </LeftContainer>
             <RightContainer>
                 <Title>
-                Olá, seja bem vindo ao <span>Dev Burguer!</span> Acesse com seu <span>Login e senha.</span>
+                Olá, seja bem vindo ao <span>Dev Burguer!</span> 
+                <br />
+                Acesse com seu <span>Login e senha.</span>
                 </Title>
                 <Form>
                     <InputContainer>
