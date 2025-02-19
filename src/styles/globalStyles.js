@@ -13,3 +13,5 @@ const globalStyles = createGlobalStyle`
         cursor: pointer;
     }
 `;
+
+export default globalStyles;
