@@ -1,4 +1,4 @@
-import { Container } from './styles';
+import { Button, Container, Form, InputContainer, LeftContainer, Link, RightContainer, Title } from './styles';
 import Logo from '../../assets/logo.svg';
 
 export function Login() {
