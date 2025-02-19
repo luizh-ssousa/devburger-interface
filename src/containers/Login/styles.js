@@ -1,13 +1,42 @@
 import styled from 'styled-components';
+import BackgroundLogin from '../../assets/background-login.svg';
+import Background from '../../assets/background.svg';
 
+export const Container = styled.div`
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+`;
 
-export const Container = styled.div``;
+export const LeftContainer = styled.div`
+    background: url('${BackgroundLogin}');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        width: 80%;
+    }
+`;
 
-export const LeftContainer = styled.div``;
+export const RightContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    max-width: 50%;
+    background: url('${Background}');
+    background-color: #1e1e1e;
+`;
 
-export const RightContainer = styled.div``;
+export const Title = styled.h2`
 
-export const Title = styled.h2``;
+`;
 
 export const Form = styled.form``;
 
