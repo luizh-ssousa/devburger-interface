@@ -35,7 +35,7 @@ export const RightContainer = styled.div`
 `;
 
 export const Title = styled.h2`
-
+    font-family: "Road Rage", serif;
 `;
 
 export const Form = styled.form``;
