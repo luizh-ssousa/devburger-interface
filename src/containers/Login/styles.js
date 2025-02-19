@@ -25,8 +25,9 @@ export const LeftContainer = styled.div`
 
 export const RightContainer = styled.div`
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     height: 100%;
     width: 100%;
     max-width: 50%;
@@ -52,7 +53,26 @@ export const Form = styled.form`
     max-width: 400px;
 `;
 
-export const InputContainer = styled.div``;
+export const InputContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+
+    input {
+        width: 100%;
+        border: none;
+        height: 52px;
+        border-radius: 5px;
+        padding: 0 16px;
+    }
+
+    label {
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+    }
+`;
 
 export const Link = styled.a``;
 
