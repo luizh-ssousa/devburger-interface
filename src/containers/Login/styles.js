@@ -83,6 +83,3 @@ export const InputContainer = styled.div`
         color: #fff;
     }
 `;
-
-
-export const Button = styled.button``;
