@@ -33,6 +33,16 @@ export const RightContainer = styled.div`
     max-width: 50%;
     background: url('${Background}');
     background-color: #1e1e1e;
+
+    p {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 800;
+
+        a {
+            text-decoration: underline;
+        }   
+    }
 `;
 
 export const Title = styled.h2`
@@ -74,6 +84,5 @@ export const InputContainer = styled.div`
     }
 `;
 
-export const Link = styled.a``;
 
 export const Button = styled.button``;
