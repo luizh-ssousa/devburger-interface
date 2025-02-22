@@ -29,12 +29,18 @@ export const Banner = styled.div`
 
         right: 20%;
         top: 30%;
+    }
 
-        span {
-            display: block;
-            color: #ffffff;
-            font-size: 20px;
-        }
+    span {
+        display: block;
+        color: #ffffff;
+        font-size: 20px;
+            
+        color: #ffffff;
+        position: absolute;
+
+        right: 17%;
+        top: 70%;
     }
 `;
 
