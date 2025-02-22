@@ -5,7 +5,14 @@ export const Container = styled.div `
         padding-right: 40px;
     }
 
+    overflow-x: hidden;
+
+    .react-multi-carousel-list {
+        overflow: visible;
+    }
+
     padding-left: 40px;
+    padding-bottom: 40px;
 `;
 
 export const Title = styled.h2 `
