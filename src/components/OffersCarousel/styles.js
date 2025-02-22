@@ -11,6 +11,15 @@ export const Container = styled.div `
         overflow: visible;
     }
 
+    .react-multiple-carousel_arrow--left {
+        left: 15px;
+        top: 10px;
+    }
+
+    .react-multiple-carousel_arrow--right {
+        top: 10px;
+    }
+
     padding-left: 40px;
     padding-bottom: 40px;
 `;
