@@ -1,7 +1,8 @@
 import { Container, Banner, CategoryMenu, ProductsContainer } from './styles';
 
 export function Menu() {
-
+  const [categories, setCategories] = useState([]);
+  
   useEffect(() => {
       async function loadCategories() {
         const { data } = await api.get('/categories');
@@ -12,7 +13,7 @@ export function Menu() {
   
       loadCategories();
     }, []);
-    
+
   return (
     <Container>
       <Banner>
