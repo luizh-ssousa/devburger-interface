@@ -11,7 +11,7 @@ export function Menu() {
 
       const newCategories = [{ id: 0, name: 'Todas' }, ...data];
 
-      setCategories(data);
+      setCategories(newCategories);
     }
 
     loadCategories();
