@@ -1,8 +1,10 @@
+import { useEffect, useState } from 'react';
 import { Container, Banner, CategoryMenu, ProductsContainer } from './styles';
+import { api } from '../../services/api';
 
 export function Menu() {
   const [categories, setCategories] = useState([]);
-  
+
   useEffect(() => {
       async function loadCategories() {
         const { data } = await api.get('/categories');
