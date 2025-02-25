@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Container, Banner, CategoryMenu, ProductsContainer } from './styles';
+import { Container, Banner, CategoryMenu, ProductsContainer, CategoryButton } from './styles';
 import { api } from '../../services/api';
 import { formatPrice } from '../../utils/formatPrice';
 import { CardProduct } from '../../components/CardProduct';
@@ -45,11 +45,15 @@ export function Menu() {
         <span>Esse cardápio está irresistível!</span>
       </Banner>
 
-      <CategoryMenu></CategoryMenu>
+      <CategoryMenu>
+          {categories.map(category =>(
+            <CategoryButton key={category.id}>{category.name}</CategoryButton>
+          ))}
+      </CategoryMenu>
 
       <ProductsContainer>
         { products.map( product => (
-          <CardProduct product={product} key={product.id}/>
+          <CardProduct product={product} key={product.id} />
         ))}
 
       </ProductsContainer>

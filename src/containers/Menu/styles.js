@@ -1,10 +1,18 @@
 import styled from 'styled-components';
 import BannerHamburger from '../../assets/banner-hamburger.svg';
+import { Link } from 'react-router-dom';
+import Background from '../../assets/background.svg';
 
 export const Container = styled.div`
     width: 100%;
     min-height: 100vh;
     background-color: #f0f0f0;
+
+     background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url('${Background}');
 `;
 
 export const Banner = styled.div`
@@ -45,6 +53,8 @@ export const Banner = styled.div`
 `;
 
 export const CategoryMenu = styled.div``;
+
+export const CategoryButton = styled(Link)``;
 
 export const ProductsContainer = styled.div`
     display: grid;
