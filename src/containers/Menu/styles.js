@@ -63,7 +63,7 @@ export const CategoryButton = styled(Link)`
     text-decoration: none;
     cursor: pointer;
     background: none;
-    color: ${(props) => (props.$isActiveCategory ? '#9758a6' : '#9a9a9d')};
+    color: ${(props) => (props.$isActiveCategory ? '#9758a6' : '#696969')};
     font-size: 24px;
     font-weight: 500;
     padding-bottom: 5px;
