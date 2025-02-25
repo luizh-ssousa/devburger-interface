@@ -52,7 +52,12 @@ export const Banner = styled.div`
     }
 `;
 
-export const CategoryMenu = styled.div``;
+export const CategoryMenu = styled.div`
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+`;
 
 export const CategoryButton = styled(Link)``;
 
