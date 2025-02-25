@@ -49,7 +49,7 @@ export function Menu() {
 
       <ProductsContainer>
         { products.map( product => (
-          <CardProduct />
+          <CardProduct product={product} key={product.id}/>
         ))}
 
       </ProductsContainer>
