@@ -3,7 +3,7 @@ import { Container, Banner, CategoryMenu, ProductsContainer, CategoryButton } fr
 import { api } from '../../services/api';
 import { formatPrice } from '../../utils/formatPrice';
 import { CardProduct } from '../../components/CardProduct';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 export function Menu() {
   const [categories, setCategories] = useState([]);
@@ -12,6 +12,10 @@ export function Menu() {
   const [activeCategory, setActiveCategory] = useState(0);
 
   const navigate = useNavigate();
+
+  const { search } = useLocation();
+
+  const queryParams = new URLSearchParams(serach);
   
 
   useEffect(() => {
